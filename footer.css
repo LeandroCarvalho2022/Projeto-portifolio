@@ -1,0 +1,22 @@
+footer {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px black;
+}
+
+.footer-text {
+    margin-left: 10px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links p {
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}

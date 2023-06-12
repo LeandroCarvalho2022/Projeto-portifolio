@@ -1,0 +1,70 @@
+.button {
+    background-color: #FFFFFF;
+    color: #523C33;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;}
+  
+.projects {
+    padding: 50px;
+    text-align: center;}
+  
+.projects h1 {
+    font-size: 36px; }
+  
+#projetos .budgets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;}
+  
+#projetos .budget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #7E5B4E;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.845);}
+  
+#projetos .budget:hover {
+    background-color: gray;}
+  
+#projetos .budget h3 {
+  font-size: 24px;
+  margin-bottom: 10px;}
+  
+#projetos .budget img {
+ max-width: 100%;
+ max-height: 100%;
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;}
+  
+.budget p {
+display: none;
+font-size: 14px;}
+
+#projetos .budget:hover img {
+    opacity: 1; }
+
+
+

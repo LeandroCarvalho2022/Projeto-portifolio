@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link href="footer.css" rel='stylesheet'>
+<link href="style.css" rel="stylesheet">
+<link href="contato.css" rel="stylesheet">
+<link href="projects.css" rel="stylesheet">
+<link href="skill.css" rel="stylesheet">
+<link href="navbar.css" rel="stylesheet">
+<link href="intro.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+<script>
+  function handleSubmit(event) {
+      event.preventDefault();
+      var contactForm = document.getElementById("contact-form");
+      var thankYouMessage = document.getElementById("thank-you-message");
+      contactForm.classList.add("hide");
+      thankYouMessage.classList.add("show");}
+</script>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#inicio">Home</a></li>
+      <li><a href="#projetos">Projects</a></li>
+      <li><a href="#habilidades">Habilities</a></li>
+      <li><a href="#contato">Contact</a></li>
+    </ul>
+  </div>
+<div class="intro" id="inicio">
+    <div class="about-me-container">
+      <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ced95d25208d0eb.png" alt="Minha Imagem">
+    </div>
+    <div class="about-me-container">
+      <p>My name is Leandro Carvalho.
+        I am Brazilian, 22 years old, and currently, I am on the path to becoming a front-end developer!
+        I have a strong knowledge of HTML and CSS languages, and now I am studying JavaScript and GIT.
+        For my studies, I use websites such as: <br><br>°https://www.w3schools.com/html/
+        <br>°https://developer.mozilla.org/en-US/<br>
+        °The CS50 Introduction to Computer Science course from Harvard and
+        Dev community forums to clarify my doubts.</p>
+
+    </div>
+</div>
+  <div id="projetos" class="projects">
+    <h1>Projects</h1>
+    <div class="budgets">
+      <a href="#projeto1" class="budget proj-1">
+        <h3>Projeto 1</h3>
+        <img class='soon' src="https://ogerbeads.com/wp-content/uploads/2023/03/360_F_315929483_O3zCF74h869pep9L2WMi6cWS2bhO2AjH.jpg">
+      </a>
+      <a href="#projeto2" class="budget proj-2">
+        <h3>Projeto 2</h3>
+        <img class='soon' src="https://ogerbeads.com/wp-content/uploads/2023/03/360_F_315929483_O3zCF74h869pep9L2WMi6cWS2bhO2AjH.jpg">
+      </a>
+      <a href="#projeto3" class="budget proj-3">
+        <h3>Projeto 3</h3>
+        <img class='soon' src="https://ogerbeads.com/wp-content/uploads/2023/03/360_F_315929483_O3zCF74h869pep9L2WMi6cWS2bhO2AjH.jpg">
+      </a>
+    </div>
+  </div>
+  <div class="skills" id="habilidades">
+    <h1>Habilities</h1>
+    <div class="budgets">
+      <div class="budget">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png?w=740&t=st=1685899671~exp=1685900271~hmac=e854adb95f495f859af40b65a359b40e90d50b1a6427a225bd9b569ff2a18320" alt="HTML">
+        <p>Used to structure a webpage using HTML elements, link external CSS stylesheets, create navigation, and include content and forms</p>
+      </div>
+      <div class="budget">
+        <img src="https://cdn-icons-png.flaticon.com/512/1199/1199113.png?w=740&t=st=1685899797~exp=1685900397~hmac=24add6c8be53456f8006001adbf7650c4ccf84efaf0f79758bb6b3096a7ac4ba" alt="CSS">
+        <p>Used to style elements, control layouts, and create visual effects using CSS properties and selectors.</p>
+      </div>
+      <div class="budget">
+        <img src="https://i0.wp.com/pt.mundobabushka.com/wp-content/uploads/sites/5/2016/03/js-logo.png?fit=500%2C500&ssl=1" alt="JavaScript">
+        <p>Still learning, more updates coming soon.</p>
+      </div>
+      <div class="budget">
+        <img src="https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png" alt="GIT">
+        <p>Still learning, more updates coming soon.</p>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id="contato">
+    <h1>Contact-me</h1>
+    <div id="contact-form" class="contact-container">
+      <form action="" method="post" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Optional"></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div id="thank-you-message" class="thank-you-message">
+      <h2>Thank you!</h2>
+      <p>Your form has been submitted.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-text">
+        <h1>Leandro Carvalho</h1>
+    </div>
+    <div class="footer-links">
+        <p onclick="window.location.href = 'https://www.linkedin.com/in/leandro-carvalho-09481121b/';">Linkedin</p>
+        <p onclick="window.location.href = 'https://github.com/LeandroCarvalho2022';">Github</p>
+        <p onclick="window.location.href = 'link-3';">Link 3</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+.contact {
+
+    padding: 50px;
+    text-align: center;
+    color: #cdaea2;}
+  
+.contact h1 {
+    font-size: 36px;
+    color: #c7c4c3;
+    text-shadow: 0 0 10px black;}
+  
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 350px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto; /* Adiciona para centralizar a caixa de contato horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona o efeito de sombra na caixa de contato */
+    padding: 30px; /* Adiciona um espaçamento interno na caixa de contato */
+    border-radius: 10px; /* Adiciona bordas arredondadas à caixa de contato */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.845);
+  }
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0; /* Remove a margem branca em torno do formulário */}
+  
+  
+label {
+    display:flex;
+    margin-bottom: 10px;
+    color: #eee8e6;}
+  
+input[type="email"],
+input[type="text"] {
+  margin-left: 30px;
+  margin-bottom: 17px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 99px;
+  border: 1px solid #5c54f058;
+  background-color: #1b2444e4;
+  color: #ffffff;
+  box-shadow: 0 0 7px black;
+  transition: border-color 0.3s;
+  box-shadow: 0.3s;}
+  
+input[type="email"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0067f7;}
+  
+button[type="submit"] {
+  background-color: #1b2444e4;
+  color: #FFFFFF;
+  padding: 20px 60px; /* Reduz o tamanho do padding para corresponder aos inputs */
+  border-radius: 99px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  margin-top: 25px;
+  margin-left: 45px;
+  width: 100%;/* Define o botão com largura total */}
+  
+button[type="submit"]:hover {
+    background-color: #133086;}
+button:disabled{
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+textarea{
+  min-height: 6rem;
+  resize: vertical;
+  margin-left: 30px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #5c54f058;
+  background-color: #1b2444e4;
+  color: #ffffff;
+  box-shadow: 0 0 7px black;
+  transition: border-color 0.3s;
+  box-shadow: 0.3s;
+}
+textarea:focus{
+  outline: none;
+  border-color:#0067f7;
+}
+.contact-container {
+  display: block;
+}
+
+.contact-container.hide {
+  display: none;
+}
+
+.thank-you-message {
+  text-align: center;
+  display: none;
+}
+
+.thank-you-message.show {
+  display: block;
+}

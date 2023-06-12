@@ -1,0 +1,30 @@
+.intro {
+
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+      
+.intro h1 {
+     font-size: 48px;
+     text-align: center;}
+      
+.intro .about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    
+.intro .about-me-container img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 0;
+    animation: bouncing 2s infinite; }
+      
+@keyframes bouncing {
+    0%, 100% {
+    transform: translateY(0);}
+    50% {
+    transform: translateY(-10px);}}
+      
+.intro .about-me-container p {
+    font-size: 24px;}
